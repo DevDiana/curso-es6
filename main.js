@@ -28,7 +28,7 @@ function mostraNome({nome, idade}){
 }
 
 mostraNome(usuario);
-*/
+
 
 //REST
 
@@ -47,3 +47,8 @@ const arr2 = [4,5,6]
 const arr3 = [ ...arr1, ...arr2]
 
 console.log(arr3);
+*/
+
+const nome = "Diana";
+const idade  = 24;
+console.log(`Meu nome é ${nome} e tenho ${idade}anos`)
