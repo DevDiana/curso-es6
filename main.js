@@ -10,7 +10,7 @@ const teste = () => {
     return 'teste';
 }
 console.log(teste());
-*/
+
 
 const usuario = {
     nome: 'Diana',
@@ -28,3 +28,22 @@ function mostraNome({nome, idade}){
 }
 
 mostraNome(usuario);
+*/
+
+//REST
+
+function soma(...params){
+    return a + b;
+
+}
+console.log(soma(1, 3, 4))
+(soma(1, 3, 4))
+
+//SPREAD
+
+const arr1 = [1,2,3]
+const arr2 = [4,5,6]
+
+const arr3 = [ ...arr1, ...arr2]
+
+console.log(arr3);
