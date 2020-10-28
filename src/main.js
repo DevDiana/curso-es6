@@ -53,7 +53,7 @@ const nome = "Diana";
 const idade  = 24;
 console.log(`Meu nome é ${nome} e tenho ${idade}anos`)
 
-*/
+
 const nome = "Diana";
 const idade  = 24;
 
@@ -64,5 +64,25 @@ const usuario = {
 
 };
 
+const minhaPromise = () => new Promise((resolve, reject)=>{
+    setTimeout(()=>{ resolve('OK')}, 2000);
+});
 
+async function executaPromise(){
+    const response = await minhaPromise();
+    console.log(response);
+}
 
+executaPromise();
+
+*/
+
+import  axios from 'axios';
+
+class Api{
+    static async getUserInfo(username){
+        const response = await axios.get('htpps://api.github.com')
+        console.log(response);
+    }
+}
+Api.getUserInfo('diana3g')
